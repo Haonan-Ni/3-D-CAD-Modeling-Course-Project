@@ -1,0 +1,5 @@
+﻿  Euler_operators.cpp
+D:\E-disk\浙江大学\课程\三维CAD建模\大作业\CAD Project\CADproject\CAD\Euler_operators.cpp(209,25): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  main.cpp
+  正在生成代码...
+  CAD.vcxproj -> D:\E-disk\浙江大学\课程\三维CAD建模\大作业\CAD Project\CADproject\x64\Debug\CAD.exe
