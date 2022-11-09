@@ -36,7 +36,7 @@ The project is developed on programming tool Visual Studio 2022. In the project,
 ## User Manual
 The program provides three options for users to interact. If you input “d”, the program will tell you the number of the current vertex and the values of default inputs, and you will follow the default demonstration that shows the structure of the program and see each steps till the end.
 
-![c574f63538ab4016a93506f313d9fa4](https://user-images.githubusercontent.com/86988075/200841404-0fb64280-a516-41b4-bcb0-3971c8996791.jpg)
+![a81a34dfcac45ebeec779e29b98a697](https://user-images.githubusercontent.com/86988075/200847514-cb05e980-5934-4c8d-80ac-52ef49a9faed.jpg)
 
 For convenience, an option of when you input ‘s’ to skip all the default steps are also considered in the program.
 
@@ -44,11 +44,11 @@ For convenience, an option of when you input ‘s’ to skip all the default ste
 
 Customization is also available in the program. Input “c” in the interface, the program tells you the vertex you are currently creating and the correct input format.
 
-![23190e1703f7bc6277b1ef5eaa0c4f3](https://user-images.githubusercontent.com/86988075/200841501-f4ccea6e-c4c6-4266-a197-4032a7a9dc24.jpg)
+![8046f900f0edd54dd8172a5fd359eff](https://user-images.githubusercontent.com/86988075/200847597-b113ef9f-dda6-4992-8ece-f61e995dd6d3.jpg)
 
 However, if you input the wrong format, the program warns you of format error and terminates.
 
-![fbbfa200af9b1e473c2735076c211d8](https://user-images.githubusercontent.com/86988075/200841538-2b365588-de77-4672-b0cf-c16fe7bd56de.jpg)
+![c9ba452d44cf42387c36dfa105e329a](https://user-images.githubusercontent.com/86988075/200847660-f371cc0d-9aac-4021-b1c2-a2c09596b92f.png)
 
 MeshFramework is quite simple and easy to use. Just open the software and use “open” command in the “file” categories to open the newly generated “B-rep_Result.brp” file in the CADproject\CAD folder. The following pictures shows the solid model created by default and custom vertices inputs in MeshFramework:
 
@@ -60,11 +60,11 @@ MeshFramework is quite simple and easy to use. Just open the software and use �
 
 MeshFramework also allows you to switch from solid paint to wire paint or vertex point, as shown below:
 
-![d1e77a29cabbc0c1fae7ac3c6519ba6](https://user-images.githubusercontent.com/86988075/200841674-87f8d432-a4f2-47c9-bb4c-4e7f35a48969.jpg)
+![fc82bd6fd059b30230490f41113f7d2](https://user-images.githubusercontent.com/86988075/200847828-fdbfe344-7236-42d0-b54e-a63bf949be20.jpg)
 
 You are also allowed to change the default topological structure of the program to reshape different solids or make more holes in the “main” source file if not satisfied with simple hexahedron. But be advised that this behavior is highly dangerous as you might create incorrect topological structures that MeshFramework cannot load. So far, this program does not support for generating multiple solids.
 
-![0d27d0846dff60bf098a0a3a51f5ad0](https://user-images.githubusercontent.com/86988075/200841698-6387518d-cf41-4dc6-80fc-59fd7da77d2e.jpg)
+![4495c8d28d3c8d9ec89455593e7670e](https://user-images.githubusercontent.com/86988075/200847942-267a55b0-16bc-4864-9ad0-c4f080775896.jpg)
 
 ## Reference
 1. Prof. Gao. Lecture notes (2022), 3-D CAD Modeling. Zhejiang University.
