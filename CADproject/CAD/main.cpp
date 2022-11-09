@@ -82,8 +82,6 @@ int main()
 
 	//Secion4
 	Sweep(std::get<1>(ret4), input(Coord{ 0.f, 5.f, 0.f }, "The sweeping direction"));
-
-	//Secion5
 	kfmrh(std::get<2>(ret0)->faces.front()->Loopout, std::get<1>(ret10)->Loopout);
 	kfmrh(std::get<2>(ret0)->faces.front()->Loopout, std::get<1>(ret16)->Loopout);
 
