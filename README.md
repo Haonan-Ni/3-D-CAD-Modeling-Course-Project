@@ -5,15 +5,23 @@ This project is to realize the five basic Euler operations based on the half-edg
 ## Review of Half-edge Data Structure
 The half-edge data structure, improved from the wing-edge by Mantyla long time ago, has now become the main stream data structure for representing the topological relations in 3-D modeling for its high efficiency in edge data structuring and practical application.
 The core concept of the half-edge data structure is that a physical edge is represented as two edges, and each edge is only related to a face (hence its name). In essence, the half-edge contains only half the information of a physical edge. A simplified half-edge data structure is presented as:
+
 ![a8a0b8cf6b127758e7a70d5a1280ba4](https://user-images.githubusercontent.com/86988075/200841191-65efc5b0-6690-4df2-a99d-093bf9e82320.jpg)
+
 Half edges, edges and vertices consists the core of this entire data structure. The following map represents the hierarchy of half-edge data structure:
-![462301aa778a4fdc437ec56b671d065](https://user-images.githubusercontent.com/86988075/200841216-05ace4ec-1a49-4b3f-be1d-33672696a67a.jpg)      
+
+![462301aa778a4fdc437ec56b671d065](https://user-images.githubusercontent.com/86988075/200841216-05ace4ec-1a49-4b3f-be1d-33672696a67a.jpg)  
+
 ## Review of Euler Operations
 The concept of Euler operation was put forward by B.G. Baumgart in 1972 to provide an effective and correct method for establishing complex boundary data structures of three-dimensional objects (to ensure validity and universality). It is based on the Euler formula:
+
 ![86adc1ac4d40b16bb213bbf7541073f](https://user-images.githubusercontent.com/86988075/200841267-17df2aed-495d-4f6e-8feb-e6d2ea12ee3e.jpg)
+
 It is this theoretical basis that provides a set of universal and complete topology operations of B-rep and supports the validity for 3-D modeling.
 The mechanism of five basic Euler operators mentioned beforehand are listed in the table below:
+
 ![3846657659f0930109338ade190619e](https://user-images.githubusercontent.com/86988075/200841307-c71e5f8f-2828-439f-b856-c1e796ae5642.jpg)
+
 ·mvsf (v, f ): To generate a face containing a vertex and form a new solid.
 ·mev (v1, v2, e): To generate a new vertex v2, connect the point to the existing vertex v1, and construct a new edge.
 ·mef (v1, v2, f1, f2, e): To connect two vertices v1 and v2 on face f1 to create a new edge e and a new face f2.
@@ -22,7 +30,9 @@ The mechanism of five basic Euler operators mentioned beforehand are listed in t
 ·kfmrh (f1, f2): To delete face f2 in contact with face f1, generate an inner ring on face f1, and form a through-hole on the solid.
 ## Program Structure
 The project is developed on programming tool Visual Studio 2022. In the project, the head file “Half_Edge_DS.h” contains the complete definition and coding of half-edge data structure. The source file “Euler_operators.cpp” includes the five basic Euler operators “mvfs”, “mev”, “mef”, “kemr”, “kfmrh”, and the additional “sweep”, together with a data store function that saves all vertices, loops, and faces created by each Euler operation step into a .brp file for later display in MeshFramework. Because OpenGL is not employed for graphical display, all environment should be able to run the program with ease. The source file “main.cpp” is where the interface are generated and all actual Euler operations happen. The beginning instruction describes the five separate sections that make up the whole “main” source file originally. By default, section 1, 2, 3 creates three individual quadrilaterals in 2-D x-z plane, which means 4 vertices in each section. Section 4 uses the “sweep” function to extrude in the third dimension to create 3-D solid based on the planar quadrilateral. Section 5 employs the “kfmrh” function to make ring holes on the 3-D solid model (instruction displayed at the beginning of the program as well).
+
 ![b5f708836fbe18ad8549bcde6db6f4d](https://user-images.githubusercontent.com/86988075/200841357-491c9dfa-0df7-4d5d-b57e-6694a3142635.jpg)
+
 ## User Manual
 The program provides three options for users to interact. If you input “d”, the program will tell you the number of the current vertex and the values of default inputs, and you will follow the default demonstration that shows the structure of the program and see each steps till the end.
 ![c574f63538ab4016a93506f313d9fa4](https://user-images.githubusercontent.com/86988075/200841404-0fb64280-a516-41b4-bcb0-3971c8996791.jpg)
